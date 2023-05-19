@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Induction Form - Webwiz</title>
+  <link rel="stylesheet" href="task.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <div class="container">
+    <h2>Webwiz inductions 22-23</h2>
+    <form id="inductionForm" onsubmit="validateForm(event)">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male"required> Male
+        <input type="radio" id="female" name="gender" value="female"re> Female
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="instituteEmail">Institute Email:</label>
+        <input type="email" id="instituteEmail" name="instituteEmail" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="rollNumber">Roll Number:</label>
+        <input type="text" id="rollNumber" name="rollNumber" required>
+    </div>
+    <div class="form-group">
+        <label for="phoneNumber">Phone Number:</label>
+        <input type="text" id="phoneNumber" name="phoneNumber" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" required>
+      </div>
+      
+      <div class="form-group">
+      <label for="interest" aria-required="">Field of Interest:</label>
+      <input type="checkbox" id="tech" name="interest" value="tech"> Tech
+      <br>
+      <input type="checkbox" id="design" name="interest" value="design"> Design
+      <br>
+      </div>
+      
+      <button id ="submit"type="submit">Submit</button>
+    </form>
+</div>
+<div class="footer">
+  &copy; 2023 Webwiz Induction
+</div>
+<script src="task.js"></script>
+</body>
+</html>    
+       
